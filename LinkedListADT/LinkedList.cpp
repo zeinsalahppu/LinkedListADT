@@ -32,7 +32,7 @@ class DoublyLinkedList
 
 DoublyLinkedList::DoublyLinkedList()
 {
-
+  m_Head = NULL;
 }
 
 
@@ -46,7 +46,10 @@ void DoublyLinkedList::addAtBeginning(int n)
 {
   NodePTR x = new Node;
   x->value = n;
+  x->prev = NULL;
   x->next = m_Head;
+  if (m_Head != NULL)
+    m_Head->prev = x;
   m_Head = x;
 }
 
@@ -66,6 +69,7 @@ void DoublyLinkedList::addAtEnd(int n)
       t = t->next;
 
     t->next = x;
+    x->prev = t;
   }
 }
 
