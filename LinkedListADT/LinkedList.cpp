@@ -9,6 +9,14 @@ class SinglyLinkedList
     SinglyLinkedList();
     ~SinglyLinkedList();
 
+    void addAtBeginning(int n);
+    void addAtEnd(int n);
+    void insertIntoSortedList(int n);
+    void readAndCreate(bool sorted = false);
+    void printOut();
+    bool isSorted();
+    int getSize();
+
   private:
     struct Node
     {
