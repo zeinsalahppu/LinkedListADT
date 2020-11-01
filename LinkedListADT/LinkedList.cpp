@@ -32,7 +32,7 @@ class SinglyLinkedList
 
 SinglyLinkedList::SinglyLinkedList()
 {
-
+  m_Head = NULL;
 }
 
 
