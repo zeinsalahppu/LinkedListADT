@@ -8,6 +8,17 @@ class SinglyLinkedList
   public:
     SinglyLinkedList();
     ~SinglyLinkedList();
+
+  private:
+    struct Node
+    {
+      int  value;
+      Node *next;
+    };
+
+    typedef Node *NodePTR;
+
+    NodePTR m_Head;
 };
 
 
