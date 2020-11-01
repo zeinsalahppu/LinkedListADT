@@ -171,6 +171,17 @@ void main()
   list.addAtEnd(18);
 
   list.printOut();
+  cout << "\n" << list.getSize() << "\n";
+
+  cout << "Sorted: " << list.isSorted() << "\n";
+
+  SinglyLinkedList list2;
+
+  list2.readAndCreate(true);
+  list2.printOut();
+  cout << "\n" << list2.getSize() << "\n";
+  cout << "Sorted: " << list2.isSorted() << "\n";
+
 
   system("PAUSE");
 }
